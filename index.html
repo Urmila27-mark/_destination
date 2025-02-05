@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Paradise</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .flex_container{
+            display: flex;
+            -ms-flex-align: center;
+            -ms-text-combine-horizontal: all;
+            justify-content: space-between;
+        }
+        
+        .vl {
+              border-left: 6px solid rgb(144, 145, 144);
+              height: 650px;
+              width: 10%;
+              margin-top: 30px;
+              box-sizing: border-box;
+              border-radius: 0.1px;
+            }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+             <!-- Logo and Brand -->
+        <a class="navbar-brand" href="#">
+            <img style="border-radius:10px;" src="Destination Paradise.png" alt="Logo" id="logo" class="logo">
+            Destination Paradise
+        </a>
+            
+            <!-- Toggle button for small screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar links (centered) -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto"> <!-- mx-auto centers the nav items -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <!-- Dropdown button with an arrow -->
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Destinations 
+                        </a>
+                        <!-- Dropdown menu with destinations -->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#beachgateway">Beach Gateway</a></li>
+                            <li><a class="dropdown-item" href="#citylifeexperience">City Life Experience</a></li>
+                            <li><a class="dropdown-item" href="#mountainadventure">Mountain Adventure</a></li>
+                            <li><a class="dropdown-item">More...</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <!-- Search bar aligned to the right -->
+            <input type="search" class="form-control ms-auto" id="searchInput" placeholder="Search " style="max-width: 200px;">
+        </div>
+    </nav>
+    
+
+    <!-- Carousel -->
+    <div class="container mt-5">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img style="border-radius: 20px;" src="beaches.png" class="d-block w-100" alt="Destination 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: black;">Explore New Destinations</h5>
+                        <p style="color: black;">Discover beautiful beaches, mountains, and cityscapes around the world.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img style="border-radius: 20px;"src="City life.png" class="d-block w-100" alt="Destination 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Beautiful Luxurious Life!</h5>
+                        <p>Here is the beautiful life you deserve out of your busy life.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img style="border-radius: 20px;" src="Mountains.png" class="d-block w-100" alt="Destination 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Adventure Awaits</h5>
+                        <p>Want to play with snow? Here you are...</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img style="border-radius: 20px;"src="valley.png" class="d-block w-100" alt="Destination 4">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Green Valleys!!</h5>
+                        <p>Admist green lush valleys, say GOODBYE to all your workload, tension and grievances.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img style="border-radius: 20px;"src="carousel5.png" class="d-block w-100" alt="Destination 5">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Want a fregnance in your life!!</h5>
+                        <p>Here are some of the prime destinations to enjoy and create memories in spring.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+    <div  class="flex_container">
+        <!-- Booking Form Section -->
+    <section id="booking" class="container mt-5">
+        <h2 class="text" style="text-align: center; width: 60%;">Book Your Dream Vaccation</h2>
+        <form id="bookingForm" style="width: 60%;">
+            <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="flex_container">
+                <div class="flex-item">
+                    <label for="countryCode" class="form-label">Country Code</label>
+                    <select class="form-select" id="countryCode" required>
+                        <!-- Country codes will be populated dynamically -->
+                    </select>
+                </div>
+                <div class="flex-item">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="number" class="form-control" id="phone" required>
+                </div>
+            </div>
+           
+            <div class="mb-3">
+                <label for="birthday" class="form-label">Birthday</label>
+                <input type="date" class="form-control" id="birthday" required>
+            </div>
+            <div class="mb-3">
+                <label for="maritalStatus" class="form-label">Marital Status</label>
+                <select class="form-select" id="maritalStatus" required>
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary submit-btn"style="text-align:center">Submit</button>
+        </form>
+        <div id="formMessage" class="mt-3"></div>
+    </section>
+    <div class="vl"></div>
+         <!-- Destinations Section -->
+    <section id="destinations" class="container mt-5">
+        <h2 class="text-center">Explore our Travel Packages</h2>
+        <div class="row d-flex justify-content-center" id="packageList">
+            <!-- Dynamic content will be loaded here -->
+            <div class="col-md-4" >
+                <div class="card" id="beachgateway">
+                    <img style="border-radius: 7px;" src="beach bali.png" class="card-img-top" alt="Destination 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Beach Gateway</h5>
+                        <p class="card-text">Explore beautiful beaches, relax and rejuvenate your mind and body.</p><br>
+                        <br>
+                        <br>
+                        <button class="btn btn-primary book-now" data-bs-toggle="modal" data-bs-target="#tripDetailsModal" data-package-index="0">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" >
+                <div class="card" id="citylifeexperience">
+                    <img style="border-radius: 7px;" src="new york city.png" class="card-img-top" alt="Destination 2">
+                    <div class="card-body">
+                        <h5 class="card-title">City Life Experience</h5>
+                        <p class="card-text">Discover the vibrant life of New York City. Comes with city tours and museum passes.</p>
+                        <br>
+                        <br>
+                        <br>
+                        <button class="btn btn-primary book-now" data-bs-toggle="modal" data-bs-target="#tripDetailsModal" data-package-index="0">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card"  id="mountainadventure">
+                    <img style="border-radius: 7px;" src="Himalayas.png" class="card-img-top" alt="Destination 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Mountain Adventure</h5>
+                        <p class="card-text">Explore the thrilling trails of the Himalayas. Package includes hiking, camping, and meals.</p>
+                        <br>
+                        <br>
+                        <br>
+                        <button class="btn btn-primary book-now" data-bs-toggle="modal" data-bs-target="#tripDetailsModal" data-package-index="0">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    <!-- Modal for Trip Details -->
+    <div class="modal fade" id="tripDetailsModal" tabindex="-1" aria-labelledby="tripDetailsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tripDetailsModalLabel">Trip Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="tripDetails">
+                    <!-- Trip details will be populated here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Proceed to Booking</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+   
+
+    <!-- About Section -->
+    <section id="about" class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="Destination Paradise.png" alt="About Us" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h2>Welcome to Destination Paradise</h2>
+                <p>Your ultimate guide to unwinding in the mostbeautiful destinations around the world.<br>
+                    From seculded beaches to bustling cities, we create the best travel experiences tailored just for you.</p>
+                   <br><h5></h5>
+                   <button class="btn btn-primary" >Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-dark text-white text-center p-4">
+        <p>&copy; 2024 Destination Paradise | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+footer {
+  background-color: #343a40;
+}
+.card-img-top {
+  height: 200px; /* Set the height of the image */
+  object-fit: cover; /* Ensures the image maintains its aspect ratio while filling the box */
+  border-radius: 10px; /* Optional: adds rounded corners to the image */
+}
+/* Apply style to the whole section */
+#bookingAndPackages {
+  background-color: #f9f9f9; /* Set background color for the entire section */
+  padding: 20px; /* Padding around the section */
+  border-radius: 8px; /* Rounded corners for the section */
+}
+
+/* Styling the travel packages section */
+.travel-packages {
+  flex: 2 1 60%;
+  padding: 20px;
+  background-color: #ffffff; /* Background color for the travel packages box */
+  border-radius: 20px; /* Rounded corners for this section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.travel-packages h2 {
+  color: #333; /* Set text color */
+  font-size: 24px; /* Set font size for the title */
+}
+
+.travel-packages .card {
+  margin-top: 10px; /* Add space between packages */
+}
+.package-container{
+  flex: 1;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+/* Styling the booking form section */
+.booking-form {
+  flex: 2 1 30%;
+  padding: 20px;
+  background-color: #ffffff; /* Background color for the form box */
+  border-radius: 8px; /* Rounded corners for this section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border-right: 2px solid #919090; /* Vertical line between the two sections */
+}
+
+.booking-form h2 {
+  color: #333; /* Set text color */
+  font-size: 24px; /* Set font size for the title */
+}
+
+.booking-form .form-control {
+  margin-bottom: 10px; /* Add space between form inputs */
+}
+
+/* Make the form and packages responsive on smaller screens */
+@media (max-width: 767px) {
+  #bookingAndPackages .row {
+      flex-direction: column; /* Stack the elements vertically on small screens */
+  }
+
+  .travel-packages, .booking-form {
+      margin-bottom: 20px; /* Add margin below each section on small screens */
+  }
+}
+/* Styling for the logo inside the navbar */
+.navbar-brand img.logo {
+  height: 40px; /* Adjust the size of the logo */
+  width: auto; /* Maintain aspect ratio */
+}
+#searchBar {
+  width: 400px; /* Adjust the width as needed */
+  padding: 10px;
+  font-size: 16px;
+}
+/* Ensure all cards have equal height */
+.card {
+  display: flex;
+  flex-direction: column;  /* Allow the card content to stretch vertically */
+  height: 100%;  /* Make the card fill the available height */
+}
+
+.card-body {
+  flex-grow: 1;  /* Allow the card body to expand and take up the remaining space */
+}
+
+.book-now{
+      padding: 10px 20px; /* Add padding to the button */
+      text-align: center; /* Center the button text */
+      width: 100%; /* Ensure the button fills the available space */
+      max-width: 200px; /* Limit the button width for consistency */
+      margin: 0 auto; /* Center the button horizontally within the card body */
+}
+.submit-btn{
+  max-width: 200px;
+  margin: 0 auto;
+padding:10px 20px;
+}
